@@ -1,0 +1,27 @@
+{
+  "name": "rail-model",
+  "version": "1.0.0",
+  "description": "eBay Redesign to illustrate RAIL model",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yirklum/rail-model.git"
+  },
+  "author": "Christina Rust",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yirklum/rail-model/issues"
+  },
+  "homepage": "https://github.com/yirklum/rail-model#readme",
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "particles.js": "^2.0.0",
+    "path": "^0.12.7",
+    "vivus": "^0.4.4"
+  }
+}
