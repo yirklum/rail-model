@@ -1,5 +1,6 @@
 
-// Vivus JS
+// Title
+// Vivus JS 
 new Vivus("title", {start: 'autostart', type: 'delayed', duration: 300, animTimingFunction: Vivus.EASE}, function(title){
     setTimeout(function(){ title.reset().play(); }, 3000);
   });
@@ -14,7 +15,7 @@ new Vivus("slogan", {start: 'autostart', type: 'delayed', duration: 300, animTim
 new Vivus('slogan', {}, function (obj) {
   obj.el.classList.add('finished')});
       
-
+// Background
 // Particle JS
     particlesJS("particles-js", {
         "particles": {
@@ -127,6 +128,7 @@ new Vivus('slogan', {}, function (obj) {
         "retina_detect": true
       });
 
+// NavBar Hinge Effect
 // animate.css
 function animationClick(element, animation){
   element = $(element);
@@ -137,20 +139,110 @@ function animationClick(element, animation){
           window.setTimeout( function(){
               element.removeClass("animated" + animation);
           }, 2000);         
-
       });
 }
 
+// $(document).ready(function(){
+$("#danger").click(
+  function() {
+    setTimeout(
+      function() {
+        $(".disappearing-nav").addClass("animated hinge");
+        window.setTimeout( function(){
+          
+          $(".disappearing-nav").text("");
+          $(".nav-link").removeClass("animated hinge");
+        },  2000);  
+      }, 5000);
+  });
+// });
+
+// Cat
+
+// $(document).ready(function(){
+
+$("#surprise").click(
+  function() {
+    setTimeout(
+      function() {
+        $("#cat").addClass("flying-cat");
+        window.setTimeout( function(){
+            $("#cat").removeClass("flying-cat");
+        }, 15000);  
+      }, 3000);
+});
+
+
+// Product cards
+// anime.js
+
 $(document).ready(function(){
-  $("#danger").click(
+  $("#prompt-button").click(
     (function() {
-      $(".nav-link").addClass("animated hinge");
-      window.setTimeout( function(){
-        $(".nav-link").removeClass("animated hinge");
-      }, 2000);  
+      $(".prompt-card").remove();
+      var myAnimation = anime({
+      targets: [".product"],
+      translateX: "1200px",
+      rotate: 360,
+      borderRadius: "10px",
+      duration: 10000,
+      loop: false
+  });
+     
     })
   )  
 })
+
+// // Grumpy Cat
+// $("#grumpy").click(function (e) {
+//   e.preventDefault();
+//   var goTo = this.getAttribute("/grumpy");
+
+
+
+//   setTimeout(function(){
+//     window.location = goTo;
+//   },1000);
+// });
+
+
+
+
+
+
+$(document).ready(function() {
+  $("#grumpy").click(
+    (function() {
+
+      $("#fakeLoader").fakeLoader({
+
+        timeToHide:10000, //Time in milliseconds for fakeLoader disappear
+
+        zIndex:"999",//Default zIndex
+
+        spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+
+        bgColor:"#966e9d", //Hex, RGB or RGBA colors
+
+        imagePath:"../images/headphones-cat.gif" //If you want can you insert your custom image
+
+      });
+
+      setTimeout(function(){
+        window.location.href=("/grumpy");
+      },10000);  
+    })
+  )
+});
+
+
+
+
+
+
+
+
+
 
 
 // _________________

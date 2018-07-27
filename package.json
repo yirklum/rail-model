@@ -4,7 +4,8 @@
   "description": "eBay Redesign to illustrate RAIL model",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,14 @@
   "homepage": "https://github.com/yirklum/rail-model#readme",
   "dependencies": {
     "animate.css": "^3.6.1",
+    "animejs": "^2.2.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "magnific-popup": "^1.1.0",
     "particles.js": "^2.0.0",
     "path": "^0.12.7",
+    "requirejs": "^2.3.5",
+    "velocity-animate": "^2.0.5",
     "vivus": "^0.4.4"
   }
 }
