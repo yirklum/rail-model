@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Demonstrating RAIL model with animation libraries",
   "main": "server.js",
+  "engines": {
+    "node": "10.7.0"
+  },
   "scripts": {
     "server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
